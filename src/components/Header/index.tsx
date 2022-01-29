@@ -1,7 +1,9 @@
 import { FiPlusSquare } from 'react-icons/fi';
 import { Container } from './styles';
 
-  interface headerProps {
+import logoIMG from '../../assets/logo.svg'
+
+interface headerProps {
   openNewModal: () => void;
 }
 
@@ -9,7 +11,7 @@ export function Header({openNewModal}: headerProps) {
  return (
       <Container>
         <header>
-          <img src="" alt="GoRestaurant" />
+          <img src={logoIMG} alt="GoRestaurant" />
           <nav>
             <div>
               <button
@@ -28,4 +30,5 @@ export function Header({openNewModal}: headerProps) {
  )
 };
 
-export default Header;
+
+export default Header
